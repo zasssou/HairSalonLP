@@ -1,0 +1,246 @@
+@use './global/index' as global;
+
+// ------------------------------------------------
+// common
+// ------------------------------------------------
+.section-title {
+  font-family: 'Quicksand';
+  font-size: 3.6rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 64px;
+  padding-bottom: 48px;
+  letter-spacing: 0.15em
+}
+
+.heading {
+  font-size: 2.4rem;
+  font-weight: 500;    
+  line-height: 1.5em;
+  margin-bottom: 16px;
+}
+
+.heading--center {
+  font-size: 2.4rem;
+  font-weight: 500;    
+  line-height: 1.5em;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.button {
+  background-color: global.$assort-color;
+  color: global.$base-color;
+  min-width: 240px;
+  height: 56px;
+  @include global.font-middle;
+  text-align: center;
+}
+
+// ------------------------------------------------
+// header
+// ------------------------------------------------
+.header {
+  width: 100%;
+  height: 100vh;
+
+  .header__img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+  }
+
+  .header__text {
+    color: global.$base-color;
+    font-family: 'Quicksand';
+    font-size: 6.4rem;
+    line-height: 1.5em;
+    padding-left: 3%;
+  }
+}
+
+// ------------------------------------------------
+// navbar
+// ------------------------------------------------
+.navbar {
+  width: 100%;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  height: 64px;
+  background-color: global.$assort-color;
+  border-bottom: 1px solid global.$assort-color;
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+
+  .navbar__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .navbar__phone-number {
+    @include global.font-middle;
+    color: global.$base-color;
+    margin-left: 12px;
+    margin-right: 24px;
+  }
+
+  .navbar__reserve-button {
+    @include global.font-middle;
+    width: 200px;
+    height: 100%;
+    background-color: global.$base-color;
+    text-align: center;
+  }
+
+  .navbar__menu-button {
+    width: 80px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// ------------------------------------------------
+// sns-links
+// ------------------------------------------------
+.sns-links {
+  position: sticky;
+  z-index: 1;
+  padding: 24px;
+
+  .sns-link__item {
+    margin-top: 24px;
+  }
+}
+
+
+// ------------------------------------------------
+// about
+// ------------------------------------------------
+.about {
+  .about__shop,
+  .about__concept {
+    display: flex;
+    margin-bottom: 48px;
+  }
+
+  .about__concept {
+    flex-direction: row-reverse;
+  }
+
+  .about__staff {
+    display: flex;
+    padding: 0 15%;
+  }
+
+  .about__article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 48px;
+  }
+
+  .about__img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .about__staff-img {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+
+// ------------------------------------------------
+// style
+// ------------------------------------------------
+.style {
+  background-color: global.$base-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .style_gallery {
+    width: 100%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2%;
+    margin-bottom: 48px;
+
+    .style_gallery_img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+
+// ------------------------------------------------
+// menu
+// ------------------------------------------------
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .menu__price-board{
+    width: 100%;
+    max-width: 1000px;
+    border: 1px solid global.$assort-color;
+    padding: 56px 72px;
+    margin-bottom: 64px;
+  }
+
+  .menu__description {
+    max-width: 720px;
+    margin-bottom: 32px;
+  }
+}
+
+
+// ------------------------------------------------
+// price-board
+// ------------------------------------------------
+.price-board {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  column-gap: 8%;
+
+  .price-board__credit-card {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+}
+
+// ------------------------------------------------
+// price-list
+// ------------------------------------------------
+.price-list {
+  margin-bottom: 40px;
+
+  .price-list__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+
+    .price-list__item__line {
+      flex-grow: 1;
+      margin: 0 4px 11px;
+      border-bottom: 1px dashed global.$assort-color;
+    }
+  }
+}
