@@ -11,35 +11,37 @@
   <title>Salon de beaute</title>
 </head>
 <body>
-  <nav class="navbar">
-    <img src="img/logo-light-beige.svg" alt="logo">
-    <div class="navbar__container">
-      <img src="img/old-phone.svg" alt="old-phone">
-      <p class="navbar__phone-number">03-9999-9999</p>
+ 
+
+  <header class="header">
+    <img class="header__img" src="img/firstview.jpg" alt="firstview">
+    <h1 class="header__text">Salon for each and every one.</h1>
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <img src="img/logo-light-beige.svg" alt="logo">
+      </div>
+      <div class="navbar__phone-number">
+        <img src="img/old-phone.svg" alt="old-phone">
+        <p>03-9999-9999</p>  
+      </div>
       <button class="navbar__reserve-button">Reserve here</button>
       <button class="navbar__menu-button">
         <img src="img/menu.svg" alt="menu">
       </button>
-    </div>
-  </nav>
-  <header class="header">
-    
-    <div class="header__img" style="background-image: url('img/firstview.jpg');">
-      <h1 class="header__text">Salon for each and every one.</h1>
-    </div>
+    </nav>
+
+    <ul class="header__sns-links">
+      <li><img src="img/instagram.svg" alt="instagram"></li>
+      <li><img src="img/twitter.svg" alt="twitter"></li>
+      <li><img src="img/line.svg" alt="line"></li>
+    </ul>
   </header>
 
-  <!-- <ul class="sns-links">
-    <li class="sns-link_item"><img src="img/instagram.svg" alt="instagram"></li>
-    <li class="sns-link_item"><img src="img/twitter.svg" alt="twitter"></li>
-    <li class="sns-link_item"><img src="img/line.svg" alt="line"></li>
-  </ul> -->
-
-  <section class="about">
+  <section>
     <h2 class="section-title">- about -</h2>
-    <div class="about__shop">
+    <div class="about">
       <img class="about__img" src="img/about01.jpg" alt="about01">
-      <div class="about__article">
+      <div class="about__introduction">
         <h3 class="heading">Salon de beauteについて</h3>
         <p>
           Saleon de beauteは東京の下町にある美容室です。
@@ -48,10 +50,8 @@
           そんな存在を目指して日々お客様と接しています。
         </p>
       </div>
-    </div>
-    <div class="about__concept">
       <img class="about__img" src="img/about02.jpg" alt="about02">
-      <div class="about__article">
+      <div class="about__concept">
         <h3 class="heading">Concept: あなたのためのサロン</h3>
         <ol type="1">
           <li>カウンセリングから仕上げまで担当者が変わりません。</li>
@@ -60,27 +60,27 @@
           <li>お時間やお日にちの都合が合わない場合、できる限り個別に対応させていただきます。</li>
         </ol>
       </div>
-    </div>
-    <div class="about__staff">
-      <img class="about__staff-img" src="img/staff.jpg" alt="staff">
-      <div class="about__article">
-        <h3 class="heading">Owner: 石井 真一</h3>
-        <p>
-          愛着のある地元で美容室ができることを大変嬉しく思っております。
-          お一人お一人のお客さまに寄り添い、末長いお付き合いができるよう、
-          日々精進して参りますので、よろしくお願いします！
-        </p>
+      <div class="about__staff">
+        <img class="about__staff__img" src="img/staff.jpg" alt="staff">
+        <div class="about__article">
+          <h3 class="heading">Owner: 石井 真一</h3>
+          <p>
+            愛着のある地元で美容室ができることを大変嬉しく思っております。
+            お一人お一人のお客さまに寄り添い、末長いお付き合いができるよう、
+            日々精進して参りますので、よろしくお願いします！
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="style">
     <h2 class="section-title">- style -</h2>
-    <div class="style_gallery">
-      <img class="style_gallery_img" src="img/style01.jpg" alt="style01">
-      <img class="style_gallery_img" src="img/style02.jpg" alt="style02">
-      <img class="style_gallery_img" src="img/style03.jpg" alt="style03">
-      <img class="style_gallery_img" src="img/style04.jpg" alt="style04">
+    <div class="style__gallery">
+      <img class="style__gallery__img" src="img/style01.jpg" alt="style01">
+      <img class="style__gallery__img" src="img/style02.jpg" alt="style02">
+      <img class="style__gallery__img" src="img/style03.jpg" alt="style03">
+      <img class="style__gallery__img" src="img/style04.jpg" alt="style04">
     </div>
     <button class="button">View more</button>
   </section>
@@ -196,6 +196,19 @@
       </p>
     </div>
     <button class="button">View more</button>
+  </section>
+
+  <section class="reserve">
+    <h2 class="section-title">- reserve -</h2>
+    <p>ご予約はhotpepper beautyまたはお電話から承っております。</p>
+    <div class="reserve__container">
+      <button class="button--icon-left">
+        <p>hotpepperで予約</p>
+        <img class="button__icon" src="img/newtab.svg" alt="newtab">
+      </button>
+      <div>03-9999-9999</div>
+    </div>
+
   </section>
 
 </body>

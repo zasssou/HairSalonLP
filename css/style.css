@@ -8,9 +8,6 @@ body {
   line-height: 1.8em;
   color: #222;
 }
-body section {
-  padding: 0 80px 80px;
-}
 
 /*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 /* Reset box-model and set borders */
@@ -444,42 +441,71 @@ th {
   height: 56px;
   font-size: 1.6rem;
   font-weight: 500;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button--icon-left {
+  background-color: #222;
+  color: #EEE8E4;
+  min-width: 240px;
+  height: 56px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button--icon-left .button__icon {
+  margin-left: 16px;
 }
 
 .header {
   width: 100%;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header .header__img {
   position: absolute;
-  top: 0;
   width: 100%;
   height: 100%;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  align-items: center;
+  object-fit: cover;
 }
 .header .header__text {
+  z-index: 1;
   color: #EEE8E4;
   font-family: "Quicksand";
   font-size: 6.4rem;
   line-height: 1.5em;
-  padding-left: 3%;
+}
+.header .header__sns-links {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
 }
 
 .navbar {
   width: 100%;
-  position: sticky;
-  z-index: 2;
+  position: fixed;
   top: 0;
+  z-index: 2;
   height: 64px;
   background-color: #222;
   border-bottom: 1px solid #222;
   display: flex;
   align-items: center;
-  padding-left: 24px;
+}
+.navbar .navbar__logo {
+  margin-left: 24px;
+  flex-grow: 1;
 }
 .navbar .navbar__container {
   width: 100%;
@@ -489,11 +515,13 @@ th {
   justify-content: flex-end;
 }
 .navbar .navbar__phone-number {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  margin: 0 16px;
   font-size: 1.6rem;
   font-weight: 500;
   color: #EEE8E4;
-  margin-left: 12px;
-  margin-right: 24px;
 }
 .navbar .navbar__reserve-button {
   font-size: 1.6rem;
@@ -511,39 +539,20 @@ th {
   align-items: center;
 }
 
-.sns-links {
-  position: sticky;
-  z-index: 1;
-  padding: 24px;
-}
-.sns-links .sns-link__item {
-  margin-top: 24px;
-}
-
-.about .about__shop,
-.about .about__concept {
-  display: flex;
-  margin-bottom: 48px;
-}
-.about .about__concept {
-  flex-direction: row-reverse;
-}
-.about .about__staff {
-  display: flex;
-  padding: 0 15%;
-}
-.about .about__article {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 48px;
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 300px);
 }
 .about .about__img {
-  width: 50%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.about .about__staff-img {
+.about .about__staff {
+  grid-area: 3/1/4/3;
+}
+.about .about__staff .about__staff__img {
   width: 240px;
   height: 240px;
 }
@@ -554,7 +563,7 @@ th {
   flex-direction: column;
   align-items: center;
 }
-.style .style_gallery {
+.style .style__gallery {
   width: 100%;
   max-width: 1000px;
   display: grid;
@@ -562,7 +571,7 @@ th {
   column-gap: 2%;
   margin-bottom: 48px;
 }
-.style .style_gallery .style_gallery_img {
+.style .style__gallery .style__gallery__img {
   width: 100%;
   object-fit: cover;
 }
@@ -592,6 +601,7 @@ th {
 }
 .price-board .price-board__credit-card {
   grid-area: 2/1/3/3;
+  font-size: 1.2rem;
 }
 
 .price-list {
@@ -606,6 +616,17 @@ th {
   flex-grow: 1;
   margin: 0 4px 11px;
   border-bottom: 1px dashed #222;
+}
+
+.reserve {
+  background-color: #EEE8E4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reserve .reserve__container {
+  margin-top: 32px;
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
