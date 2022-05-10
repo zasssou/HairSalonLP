@@ -16,32 +16,34 @@
   <header class="header">
     <img class="header__img" src="img/firstview.jpg" alt="firstview">
     <h1 class="header__text">Salon for each and every one.</h1>
-    <nav class="navbar">
-      <div class="navbar__logo">
+
+    <nav class="header-navbar">
+      <div class="header-navbar__logo">
         <img src="img/logo-light-beige.svg" alt="logo">
       </div>
-      <div class="navbar__phone-number">
-        <img src="img/old-phone.svg" alt="old-phone">
+      <div class="header-navbar__phone-number">
+        <img src="img/phone-light-beige.svg" alt="phone">
         <p>03-9999-9999</p>  
       </div>
-      <button class="navbar__reserve-button">Reserve here</button>
-      <button class="navbar__menu-button">
+      <button class="header-navbar__reserve-button">Reserve here</button>
+      <button class="header-navbar__menu-button">
         <img src="img/menu.svg" alt="menu">
       </button>
     </nav>
 
-    <ul class="header__sns-links">
+    <ul class="header-sns-links">
       <li><img src="img/instagram.svg" alt="instagram"></li>
       <li><img src="img/twitter.svg" alt="twitter"></li>
       <li><img src="img/line.svg" alt="line"></li>
     </ul>
   </header>
 
-  <section>
+  <section class="about">
     <h2 class="section-title">- about -</h2>
-    <div class="about">
-      <img class="about__img" src="img/about01.jpg" alt="about01">
-      <div class="about__introduction">
+
+    <div class="about-introduction">
+      <img class="about-introduction__img" src="img/about01.jpg" alt="about01">
+      <div class="about-introduction__description">
         <h3 class="heading">Salon de beauteについて</h3>
         <p>
           Saleon de beauteは東京の下町にある美容室です。
@@ -50,8 +52,11 @@
           そんな存在を目指して日々お客様と接しています。
         </p>
       </div>
-      <img class="about__img" src="img/about02.jpg" alt="about02">
-      <div class="about__concept">
+    </div>
+
+    <div class="about-concept">
+      <img class="about-concept__img" src="img/about02.jpg" alt="about02">
+      <div class="about-concept__description">
         <h3 class="heading">Concept: あなたのためのサロン</h3>
         <ol type="1">
           <li>カウンセリングから仕上げまで担当者が変わりません。</li>
@@ -60,134 +65,130 @@
           <li>お時間やお日にちの都合が合わない場合、できる限り個別に対応させていただきます。</li>
         </ol>
       </div>
-      <div class="about__staff">
-        <img class="about__staff__img" src="img/staff.jpg" alt="staff">
-        <div class="about__article">
-          <h3 class="heading">Owner: 石井 真一</h3>
-          <p>
-            愛着のある地元で美容室ができることを大変嬉しく思っております。
-            お一人お一人のお客さまに寄り添い、末長いお付き合いができるよう、
-            日々精進して参りますので、よろしくお願いします！
-          </p>
-        </div>
+    </div>
+
+    <div class="about-staff">
+      <img class="about-staff__img" src="img/staff.jpg" alt="staff">
+      <div class="about-staff__description">
+        <h3 class="heading">Owner: 石井 真一</h3>
+        <p>
+          愛着のある地元で美容室ができることを大変嬉しく思っております。
+          お一人お一人のお客さまに寄り添い、末長いお付き合いができるよう、
+          日々精進して参りますので、よろしくお願いします！
+        </p>
       </div>
     </div>
+
   </section>
 
   <section class="style">
     <h2 class="section-title">- style -</h2>
-    <div class="style__gallery">
-      <img class="style__gallery__img" src="img/style01.jpg" alt="style01">
-      <img class="style__gallery__img" src="img/style02.jpg" alt="style02">
-      <img class="style__gallery__img" src="img/style03.jpg" alt="style03">
-      <img class="style__gallery__img" src="img/style04.jpg" alt="style04">
+    <div class="style-gallery">
+      <img class="style-gallery__img" src="img/style01.jpg" alt="style01">
+      <img class="style-gallery__img" src="img/style02.jpg" alt="style02">
+      <img class="style-gallery__img" src="img/style03.jpg" alt="style03">
+      <img class="style-gallery__img" src="img/style04.jpg" alt="style04">
     </div>
     <button class="button">View more</button>
   </section>
 
   <section class="menu">
     <h2 class="section-title">- menu -</h2>
-    <div class="menu__price-board">
-      <div class="price-board">
+    <div class="menu-board">
 
-        <div class="price-board__left-column">
-          <h3 class="heading">Cut</h3>
-          <ul class="price-list">
-            <li class="price-list__item">
-              <p>カット&シャンプー</p>
-              <div class="price-list__item__line"></div>
-              <p>¥4,100</p>
-            </li>
-          </ul>
-          <h3 class="heading">Color</h3>
-          <ul class="price-list">
-            <li class="price-list__item">
-              <p>高濃度フルボ酸リタッチカラー</p>
-              <div class="price-list__item__line"></div>
-              <p>¥8,500</p>
-            </li>
-            <li class="price-list__item">
-              <p>高濃度フルボ酸ワンメイクカラー</p>
-              <div class="price-list__item__line"></div>
-              <p>¥9,500</p>
-            </li>
-            <li class="price-list__item">
-              <p>高濃度フルボ酸入りWカラー</p>
-              <div class="price-list__item__line"></div>
-              <p>¥15,000</p>
-            </li>
-          </ul>
-          <h3 class="heading">Straighting</h3>
-          <ul class="price-list">
-            <li class="price-list__item">
-              <p>高濃度フルボ酸入り縮毛矯正</p>
-              <div class="price-list__item__line"></div>
-              <p>¥12,000</p>
-            </li>
-            <li class="price-list__item">
-              <p>高濃度フルボ酸入りポイント矯正</p>
-              <div class="price-list__item__line"></div>
-              <p>¥4,250</p>
-            </li>
-          </ul>
-        </div>
-
-        <div class="price-board__right-column">
-          <h3 class="heading">Perm</h3>
-          <ul class="price-list">
-            <li class="price-list__item">
-              <p>高濃度フルボ酸入りスピデジパーマ</p>
-              <div class="price-list__item__line"></div>
-              <p>¥14,000</p>
-            </li>
-            <li class="price-list__item">
-              <p>メンズデザインパーマ</p>
-              <div class="price-list__item__line"></div>
-              <p>¥9,800</p>
-            </li>
-            <li class="price-list__item">
-              <p>高濃度フルボ酸入りコスメパーマ</p>
-              <div class="price-list__item__line"></div>
-              <p>¥12,000</p>
-            </li>
-            <li class="price-list__item">
-              <p>高濃度フルボ酸入りポイントパーマ</p>
-              <div class="price-list__item__line"></div>
-              <p>¥8,000</p>
-            </li>
-            <li class="price-list__item">
-              <p>ニュアンスストレート</p>
-              <div class="price-list__item__line"></div>
-              <p>¥12,800</p>
-            </li>
-          </ul>
-          <h3 class="heading">Other</h3>
-          <ul class="price-list">
-            <li class="price-list__item">
-              <p>シャンプー＆ブロー</p>
-              <div class="price-list__item__line"></div>
-              <p>¥2,700</p>
-            </li>
-            <li class="price-list__item">
-              <p>完熟トリートメントヘッドスパ</p>
-              <div class="price-list__item__line"></div>
-              <p>¥3,800</p>
-            </li>
-          </ul>
-        </div>
-
-        <div class="price-board__credit-card">
-          <p>各種カードでもお支払いいただけます。</p>
-
-          <img src="img/cc-visa.svg" alt="visa">
-          <img src="img/cc-jcb.svg" alt="jcb">
-          <img src="img/cc-mastercard.svg" alt="mastercard">
-          <img src="img/cc-amex.svg" alt="amex">
-        </div>
-
+      <div class="menu-board__left-column">
+        <h3 class="heading">Cut</h3>
+        <ul class="menu-list">
+          <li class="menu-list__item">
+            <p>カット&シャンプー</p>
+            <div class="menu-list__item__line"></div>
+            <p>¥4,100</p>
+          </li>
+        </ul>
+        <h3 class="heading">Color</h3>
+        <ul class="menu-list">
+          <li class="menu-list__item">
+            <p>高濃度フルボ酸リタッチカラー</p>
+            <div class="menu-list__item__line"></div>
+            <p>¥8,500</p>
+          </li>
+          <li class="menu-list__item">
+            <p>高濃度フルボ酸ワンメイクカラー</p>
+            <div class="menu-list__item__line"></div>
+            <p>¥9,500</p>
+          </li>
+          <li class="menu-list__item">
+            <p>高濃度フルボ酸入りWカラー</p>
+            <div class="menu-list__item__line"></div>
+            <p>¥15,000</p>
+          </li>
+        </ul>
+        <h3 class="heading">Straighting</h3>
+        <ul class="menu-list">
+          <li class="menu-list__item">
+            <p>高濃度フルボ酸入り縮毛矯正</p>
+            <div class="menu-list__item__line"></div>
+            <p>¥12,000</p>
+          </li>
+          <li class="menu-list__item">
+            <p>高濃度フルボ酸入りポイント矯正</p>
+            <div class="menu-list__item__line"></div>
+            <p>¥4,250</p>
+          </li>
+        </ul>
       </div>
+
+      <div class="menu-board__right-column">
+        <h3 class="heading">Perm</h3>
+        <ul class="menu-list">
+          <li class="menu-list__item">
+            <p>高濃度フルボ酸入りスピデジパーマ</p>
+            <div class="menu-list__item__line"></div>
+            <p>¥14,000</p>
+          </li>
+          <li class="menu-list__item">
+            <p>メンズデザインパーマ</p>
+            <div class="menu-list__item__line"></div>
+            <p>¥9,800</p>
+          </li>
+          <li class="menu-list__item">
+            <p>高濃度フルボ酸入りコスメパーマ</p>
+            <div class="menu-list__item__line"></div>
+            <p>¥12,000</p>
+          </li>
+          <li class="menu-list__item">
+            <p>高濃度フルボ酸入りポイントパーマ</p>
+            <div class="menu-list__item__line"></div>
+            <p>¥8,000</p>
+          </li>
+          <li class="menu-list__item">
+            <p>ニュアンスストレート</p>
+            <div class="menu-list__item__line"></div>
+            <p>¥12,800</p>
+          </li>
+        </ul>
+        <h3 class="heading">Other</h3>
+        <ul class="menu-list">
+          <li class="menu-list__item">
+            <p>シャンプー＆ブロー</p>
+            <div class="menu-list__item__line"></div>
+            <p>¥2,700</p>
+          </li>
+          <li class="menu-list__item">
+            <p>完熟トリートメントヘッドスパ</p>
+            <div class="menu-list__item__line"></div>
+            <p>¥3,800</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="menu-board__credit-card">
+        <p>各種カードでもお支払いいただけます。</p>
+        <img src="img/credit-card.svg" alt="credit-card">
+      </div>
+
     </div>
-    <div class="menu__description">
+    <div class="menu-description">
       <h3 class="heading--center">~ 高濃度フルボ酸とは? ~</h3>
       <p>
         フルボ酸とは土壌の中に存在する有機酸の１つで、自然界の中では植物にミネラルを補給する
@@ -201,15 +202,40 @@
   <section class="reserve">
     <h2 class="section-title">- reserve -</h2>
     <p>ご予約はhotpepper beautyまたはお電話から承っております。</p>
-    <div class="reserve__container">
+    <div class="reserve-guide">
       <button class="button--icon-left">
         <p>hotpepperで予約</p>
         <img class="button__icon" src="img/newtab.svg" alt="newtab">
       </button>
-      <div>03-9999-9999</div>
+      <div class="reserve-guide__phone-number">
+        <img src="img/phone-dark-gray.svg" alt="phone">
+        <p>03-9999-9999</p>
+      </div>
     </div>
-
   </section>
 
+  <section class="access">
+    <h2 class="section-title">- access -</h2>
+    <div class="access-information">
+      <img src="img/logo-dark-gray.svg" alt="logo">
+      <p>
+        Tell: 080-9999-9999<br>
+        Adress: 〒120-0000 東京都葛飾区11-11-11 葛飾ビル1F
+      </p>
+      <p>
+        水木金 10:00 ~ 22:00 / 土日月 10:00 ~ 20:00<br>
+        （最終受付: パーマ・カラー 18:00 / カット 19:00）
+      </p>
+      <p>
+        月曜日・不定休<br>
+        不定休についてはSNSでお知らせします
+      </p>
+    </div>
+    <iframe class="access-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12952.05925814341!2d139.84528338692155!3d35.7504406328498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188589d9159031%3A0x92910841a6afccad!2z44CSMTI1LTAwNjI!5e0!3m2!1sja!2sjp!4v1652187415261!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+  
+  <footer class="footer">
+    <p class="footer-copyright">Copyright</p>
+  </footer>
 </body>
 </html>
