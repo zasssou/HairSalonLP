@@ -1,9 +1,5 @@
 @use '../global/index' as global;
 
-#hair-style {
-  background-color: global.$base-color;
-}
-
 .hair-style-gallery {
   width: 100%;
   max-width: global.$max-width;

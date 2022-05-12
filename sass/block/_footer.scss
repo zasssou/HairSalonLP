@@ -1,6 +1,6 @@
 @use '../global/index' as global;
 
-#footer {
+.footer {
   background-color: global.$assort-color;
   height: 48px;
   @include global.flex-center;

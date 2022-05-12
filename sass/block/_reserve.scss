@@ -1,9 +1,5 @@
 @use '../global/index' as global;
 
-#reserve {
-  background-color: global.$base-color;
-}
-
 .reserve-guide {
   margin-top: 32px;
   display: flex;

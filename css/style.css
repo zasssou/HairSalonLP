@@ -502,7 +502,11 @@ th {
   padding-bottom: 48px;
 }
 
-#footer {
+.common-section--colored {
+  background-color: #EEE8E4;
+}
+
+.footer {
   background-color: #222;
   height: 48px;
   display: flex;
@@ -512,10 +516,6 @@ th {
 
 .footer-copyright {
   color: #EEE8E4;
-}
-
-#hair-style {
-  background-color: #EEE8E4;
 }
 
 .hair-style-gallery {
@@ -531,7 +531,7 @@ th {
   object-fit: cover;
 }
 
-#header {
+.header {
   width: 100%;
   height: 100vh;
 }
@@ -647,10 +647,6 @@ th {
 .menu-description {
   margin-bottom: 32px;
   text-align: center;
-}
-
-#reserve {
-  background-color: #EEE8E4;
 }
 
 .reserve-guide {
