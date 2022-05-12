@@ -1,0 +1,11 @@
+@use '../global/index' as global;
+
+#footer {
+  background-color: global.$assort-color;
+  height: 48px;
+  @include global.flex-center;
+}
+
+.footer-copyright {
+  color: global.$base-color;
+}

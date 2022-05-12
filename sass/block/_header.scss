@@ -1,0 +1,63 @@
+@use '../global/index' as global;
+
+#header {
+  width: 100%;
+  height: 100vh;
+}
+
+.header-text {
+  position: absolute;
+  top: 50vh;
+  left: 40px;
+  z-index: 1;
+  color: global.$base-color;
+  font-family: global.$decorative-font-family;
+  line-height: 1.5em;
+}
+
+.header-navbar {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  height: 64px;
+  background-color: global.$assort-color;
+  border-bottom: 1px solid global.$assort-color;
+  display: grid;
+  grid-template-columns: 200px 1fr auto auto auto 80px;
+  align-items: center;
+
+  .header-navbar__logo {
+    padding-left: 24px;
+    height: auto
+  }
+  
+  .header-navbar__phone-number {
+    @include global.font-middle;
+    color: global.$base-color;
+    padding: 0 16px;
+  }
+
+  .header-navbar__reserve-button {
+    height: 100%;
+    padding: 0 32px;
+    @include global.font-middle;
+    background-color: global.$base-color;
+    text-align: center;
+  }
+
+  .header-navbar__menu-button {
+    height: 100%;  
+    @include global.flex-center;
+  }
+}
+
+.header-sns-links {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  padding: 24px;
+  display: grid;
+  row-gap: 24px;
+}
