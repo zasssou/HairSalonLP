@@ -5,14 +5,20 @@
   height: 100vh;
 }
 
-.header-text {
-  position: absolute;
-  top: 50vh;
-  left: 40px;
-  z-index: 1;
-  color: global.$base-color;
-  font-family: global.$decorative-font-family;
-  line-height: 1.5em;
+.header-firstview {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+
+  .header-firstview__text {
+    margin-left: 40px;
+    color: global.$base-color;
+    font-family: global.$decorative-font-family;
+    line-height: 1.5em;
+  }
 }
 
 .header-navbar {
@@ -23,18 +29,24 @@
   height: 64px;
   background-color: global.$assort-color;
   border-bottom: 1px solid global.$assort-color;
-  display: grid;
-  grid-template-columns: 200px 1fr auto auto auto 80px;
+  display: flex;
   align-items: center;
 
   .header-navbar__logo {
     padding-left: 24px;
-    height: auto
+    width: 200px;
+    height: auto;
+  }
+
+  .header-navbar__space {
+    flex-grow: 1;
   }
   
   .header-navbar__phone-number {
+    display: flex;
     @include global.font-middle;
     color: global.$base-color;
+    column-gap: 16px;
     padding: 0 16px;
   }
 
@@ -47,6 +59,7 @@
   }
 
   .header-navbar__menu-button {
+    width: 80px;
     height: 100%;  
     @include global.flex-center;
   }
@@ -60,4 +73,27 @@
   padding: 24px;
   display: grid;
   row-gap: 24px;
+}
+
+@media screen and (max-width: global.$breakpoint) {
+  .header-text {
+    left: 24px;
+    line-height: 1.5em;
+  }
+
+  .header-navbar {
+    height: 48px;
+
+    .header-navbar__phone-number {
+      display: none;
+    }
+
+    .header-navbar__reserve-button {
+      padding: 0 24px;
+    }
+
+    .header-navbar__menu-button {
+      width: 64px;
+    }
+  }
 }

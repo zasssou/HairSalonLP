@@ -46,4 +46,8 @@
   background-color: global.$base-color;
 }
 
-
+@media screen and (max-width: global.$breakpoint) {
+  .common-section {
+    padding: 64px 24px 80px;
+  }
+}

@@ -3,7 +3,7 @@
 .reserve-guide {
   margin-top: 32px;
   display: flex;
-  column-gap: 16px;
+  gap: 16px;
 
   .reserve-guide__phone-number {
     @include global.flex-center;
@@ -12,5 +12,11 @@
     width: 240px;
     height: 56px;
     border: 1px dashed global.$assort-color;
+  }
+}
+
+@media screen and (max-width: global.$breakpoint) {
+  .reserve-guide {
+    flex-direction: column;
   }
 }
