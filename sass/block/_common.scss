@@ -1,0 +1,53 @@
+@use '../global/index' as global;
+
+.common-button {
+  background-color: global.$assort-color;
+  color: global.$base-color;
+  width: 240px;
+  height: 56px;
+  @include global.font-middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.common-icon-small {
+  width: 20px;
+  height: auto;
+}
+
+.common-icon-medium {
+  width: 24px;
+  height: auto;
+}
+
+.common-headline {
+  font-weight: 500;
+  padding-bottom: 16px;
+}
+
+.common-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 40px 80px;
+
+  .common-section__title {
+    font-family: global.$decorative-font-family;
+    letter-spacing: 0.15em;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 48px;
+  }
+}
+
+.common-section--colored {
+  background-color: global.$base-color;
+}
+
+@media screen and (max-width: global.$breakpoint) {
+  .common-section {
+    padding: 64px 24px 80px;
+  }
+}
