@@ -413,7 +413,7 @@ body img {
   height: 100%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 480px) {
   body {
     font-size: 1.2rem;
   }
@@ -470,6 +470,11 @@ body img {
   height: 400px;
 }
 
+@media screen and (max-width: 480px) {
+  .access-information .access-information__logo {
+    width: 120px;
+  }
+}
 .common-button {
   background-color: #222;
   color: #EEE8E4;
@@ -496,6 +501,7 @@ body img {
 .common-headline {
   font-size: 2.4rem;
   font-weight: 500;
+  line-height: 1.5em;
   padding-bottom: 16px;
 }
 
@@ -531,6 +537,22 @@ body img {
 @media screen and (max-width: 800px) {
   .common-section {
     padding: 64px 24px 80px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .common-headline {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  .common-section .common-section__title {
+    font-size: 2.4rem;
+    padding-bottom: 32px;
+  }
+
+  .common-button {
+    width: 100%;
+    font-size: 1.4rem;
   }
 }
 .footer {
@@ -653,6 +675,16 @@ body img {
     width: 64px;
   }
 }
+@media screen and (max-width: 480px) {
+  .header-navbar .header-navbar__logo {
+    padding-left: 16px;
+    width: 160px;
+    height: auto;
+  }
+  .header-navbar .header-navbar__reserve-button {
+    display: none;
+  }
+}
 .menu-board {
   position: relative;
   top: 10px;
@@ -741,6 +773,16 @@ body img {
 @media screen and (max-width: 800px) {
   .reserve-guide {
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reserve-guide {
+    flex-direction: column;
+    width: 100%;
+  }
+  .reserve-guide .reserve-guide__phone-number {
+    width: 100%;
+    font-size: 1.4rem;
   }
 }
 

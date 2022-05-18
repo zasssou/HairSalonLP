@@ -17,3 +17,11 @@
   max-width: 800px;
   height: 400px;
 }
+
+@media screen and (max-width: global.$breakpoint-sp) {
+  .access-information {
+    .access-information__logo {
+      width: 120px;
+    }
+  }
+}

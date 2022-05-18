@@ -23,8 +23,9 @@
 }
 
 .common-headline {
-  font-size: 2.4rem;
+  font-size: global.$font-large;
   font-weight: 500;
+  line-height: 1.5em;
   padding-bottom: 16px;
 }
 
@@ -35,7 +36,7 @@
   padding: 64px 40px 80px;
 
   .common-section__title {
-    font-size: 3.6rem;
+    font-size: global.$font-xlarge;
     font-family: global.$decorative-font-family;
     letter-spacing: 0.15em;
     text-align: center;
@@ -58,8 +59,26 @@
   row-gap: 24px;
 }
 
-@media screen and (max-width: global.$breakpoint) {
+@media screen and (max-width: global.$breakpoint-tb) {
   .common-section {
     padding: 64px 24px 80px;
+  }
+}
+
+@media screen and (max-width: global.$breakpoint-sp) {
+  .common-headline {
+    @include global.font-middle;
+  }
+
+  .common-section {
+    .common-section__title {
+      font-size: global.$font-large;
+      padding-bottom: 32px;
+    }
+  }
+
+  .common-button {
+    width: 100%;
+    font-size: global.$font-small;
   }
 }

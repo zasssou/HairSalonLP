@@ -14,7 +14,7 @@
   }
 }
 
-@media screen and (max-width: global.$breakpoint) {
+@media screen and (max-width: global.$breakpoint-tb) {
   .hair-style-gallery {
     grid-template-columns: repeat(2, 1fr);
   }

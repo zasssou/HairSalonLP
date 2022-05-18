@@ -61,7 +61,7 @@
   text-align: center;
 }
 
-@media screen and (max-width: global.$breakpoint) {
+@media screen and (max-width: global.$breakpoint-tb) {
   .menu-board {
     grid-template-columns: auto;
     row-gap: 0;

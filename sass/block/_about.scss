@@ -21,7 +21,7 @@
   padding: 0 15%;
 }
 
-@media screen and (max-width: global.$breakpoint) {
+@media screen and (max-width: global.$breakpoint-tb) {
   .about-container{
     grid-template-columns: 1fr;
   }

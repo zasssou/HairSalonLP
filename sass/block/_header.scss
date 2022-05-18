@@ -73,7 +73,7 @@
   }
 }
 
-@media screen and (max-width: global.$breakpoint) {
+@media screen and (max-width: global.$breakpoint-tb) {
   .header-firstview {
     .header-firstview__text {
       font-size: 4rem;
@@ -95,6 +95,20 @@
 
     .header-navbar__menu-button {
       width: 64px;
+    }
+  }
+}
+
+@media screen and (max-width: global.$breakpoint-sp) {
+  .header-navbar {
+    .header-navbar__logo {
+      padding-left: 16px;
+      width: 160px;
+      height: auto;
+    }
+
+    .header-navbar__reserve-button {
+      display: none;
     }
   }
 }

@@ -15,8 +15,20 @@
   }
 }
 
-@media screen and (max-width: global.$breakpoint) {
+@media screen and (max-width: global.$breakpoint-tb) {
   .reserve-guide {
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: global.$breakpoint-sp) {
+  .reserve-guide {
+    flex-direction: column;
+    width: 100%;
+    
+    .reserve-guide__phone-number {
+      width: 100%;
+      font-size: global.$font-small;
+    }
   }
 }

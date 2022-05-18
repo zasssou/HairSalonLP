@@ -16,7 +16,7 @@ body {
   }
 }
 
-@media screen and (max-width: global.$breakpoint) {
+@media screen and (max-width: global.$breakpoint-sp) {
   body {
     font-size: global.$font-xsmall;
   }
