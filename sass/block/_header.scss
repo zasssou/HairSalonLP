@@ -15,6 +15,7 @@
 
   .header-firstview__text {
     margin-left: 40px;
+    font-size: 6.4rem;
     color: global.$base-color;
     font-family: global.$decorative-font-family;
     line-height: 1.5em;
@@ -30,7 +31,14 @@
   background-color: global.$assort-color;
   border-bottom: 1px solid global.$assort-color;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+
+  .header-navbar__right-items {
+    height: 100%;
+    display: flex;
+    align-items: center;    
+  }
 
   .header-navbar__logo {
     padding-left: 24px;
@@ -65,20 +73,13 @@
   }
 }
 
-.header-sns-links {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-  padding: 24px;
-  display: grid;
-  row-gap: 24px;
-}
-
 @media screen and (max-width: global.$breakpoint) {
-  .header-text {
-    left: 24px;
-    line-height: 1.5em;
+  .header-firstview {
+    .header-firstview__text {
+      font-size: 4rem;
+      margin-left: 24px;
+      line-height: 1.5em;
+    }
   }
 
   .header-navbar {

@@ -46,7 +46,7 @@
     justify-content: space-between;
     margin-bottom: 8px;
 
-    .menu-list__item__line {
+    .menu-list__item-line {
       flex-grow: 1;
       margin: 0 4px 11px;
       border-bottom: 1px dashed global.$assort-color;
@@ -65,7 +65,7 @@
   .menu-board {
     grid-template-columns: auto;
     row-gap: 0;
-    padding: 32px 48px;
+    padding: 24px 32px;
   }
 
   .menu-credit-card {

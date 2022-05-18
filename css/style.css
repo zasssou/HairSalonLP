@@ -408,29 +408,14 @@ body {
   line-height: 1.8em;
   color: #222;
 }
-body h1 {
-  font-size: 6.4rem;
-}
-body h2 {
-  font-size: 3.6rem;
-}
-body h3 {
-  font-size: 2.4rem;
-}
 body img {
   width: 100%;
   height: 100%;
 }
 
 @media screen and (max-width: 800px) {
-  body h1 {
-    font-size: 5.6rem;
-  }
-  body h2 {
-    font-size: 2.8rem;
-  }
-  body h3 {
-    font-size: 2rem;
+  body {
+    font-size: 1.2rem;
   }
 }
 .about-container {
@@ -509,6 +494,7 @@ body img {
 }
 
 .common-headline {
+  font-size: 2.4rem;
   font-weight: 500;
   padding-bottom: 16px;
 }
@@ -520,6 +506,7 @@ body img {
   padding: 64px 40px 80px;
 }
 .common-section .common-section__title {
+  font-size: 3.6rem;
   font-family: "Quicksand", serif;
   letter-spacing: 0.15em;
   text-align: center;
@@ -529,6 +516,16 @@ body img {
 
 .common-section--colored {
   background-color: #EEE8E4;
+}
+
+.common-sns-links {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  padding: 24px;
+  display: grid;
+  row-gap: 24px;
 }
 
 @media screen and (max-width: 800px) {
@@ -581,6 +578,7 @@ body img {
 }
 .header-firstview .header-firstview__text {
   margin-left: 40px;
+  font-size: 6.4rem;
   color: #EEE8E4;
   font-family: "Quicksand", serif;
   line-height: 1.5em;
@@ -594,6 +592,12 @@ body img {
   height: 64px;
   background-color: #222;
   border-bottom: 1px solid #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-navbar .header-navbar__right-items {
+  height: 100%;
   display: flex;
   align-items: center;
 }
@@ -629,19 +633,10 @@ body img {
   align-items: center;
 }
 
-.header-sns-links {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-  padding: 24px;
-  display: grid;
-  row-gap: 24px;
-}
-
 @media screen and (max-width: 800px) {
-  .header-text {
-    left: 24px;
+  .header-firstview .header-firstview__text {
+    font-size: 4rem;
+    margin-left: 24px;
     line-height: 1.5em;
   }
 
@@ -702,7 +697,7 @@ body img {
   justify-content: space-between;
   margin-bottom: 8px;
 }
-.menu-list .menu-list__item .menu-list__item__line {
+.menu-list .menu-list__item .menu-list__item-line {
   flex-grow: 1;
   margin: 0 4px 11px;
   border-bottom: 1px dashed #222;
@@ -719,7 +714,7 @@ body img {
   .menu-board {
     grid-template-columns: auto;
     row-gap: 0;
-    padding: 32px 48px;
+    padding: 24px 32px;
   }
 
   .menu-credit-card {
