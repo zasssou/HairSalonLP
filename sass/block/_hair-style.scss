@@ -1,0 +1,21 @@
+@use '../global/index' as global;
+
+.hair-style-gallery {
+  width: 100%;
+  max-width: global.$max-width;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2%;
+  margin-bottom: 48px;
+
+  .hair-style-gallery__img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: global.$breakpoint-tb) {
+  .hair-style-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

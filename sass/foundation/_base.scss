@@ -1,0 +1,23 @@
+@use '../global/index' as global;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: global.$default-font-family;
+  font-size: global.$font-small;
+  line-height: 1.8em;
+  color: global.$assort-color;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: global.$breakpoint-sp) {
+  body {
+    font-size: global.$font-xsmall;
+  }
+}

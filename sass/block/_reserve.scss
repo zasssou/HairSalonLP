@@ -1,0 +1,34 @@
+@use '../global/index' as global;
+
+.reserve-guide {
+  margin-top: 32px;
+  display: flex;
+  gap: 16px;
+
+  .reserve-guide__phone-number {
+    @include global.flex-center;
+    @include global.font-middle;
+    column-gap: 16px;
+    width: 240px;
+    height: 56px;
+    border: 1px dashed global.$assort-color;
+  }
+}
+
+@media screen and (max-width: global.$breakpoint-tb) {
+  .reserve-guide {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: global.$breakpoint-sp) {
+  .reserve-guide {
+    flex-direction: column;
+    width: 100%;
+    
+    .reserve-guide__phone-number {
+      width: 100%;
+      font-size: global.$font-small;
+    }
+  }
+}
