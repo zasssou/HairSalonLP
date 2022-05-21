@@ -599,7 +599,7 @@ body img {
   align-items: center;
 }
 .header-firstview .header-firstview__text {
-  margin-left: 40px;
+  margin: 0 40px;
   font-size: 6.4rem;
   color: #EEE8E4;
   font-family: "Quicksand", serif;
