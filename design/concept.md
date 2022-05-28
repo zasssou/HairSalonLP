@@ -1,6 +1,3 @@
-## お題
-https://crestadesign.org/webdesign-work01/
-
 ## 参考にするサイト
 1. https://www.pinterest.jp/pin/3518505946215692/
 2. https://www.pinterest.jp/pin/387591111683928372/
@@ -15,7 +12,6 @@ https://crestadesign.org/webdesign-work01/
 
 ## フォント
 - kiwi maru (日本語/英語)
-- Sacramento （見出し・飾り文字）
 
 ## ねらい
 ハンドメイド感を出すため
