@@ -7,7 +7,6 @@ https://zasssou.github.io/HairSalonLP/
 https://crestadesign.org/webdesign-work01/
 
 - ある程度ワイヤーフレームに沿って作成するが、必要に応じて改変
-- サンプルコードは見ず、デザインデータとデモサイトのみ参照
 - デザインカンプ作成～モック実装
 
 ## デザインカンプ
